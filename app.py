@@ -71,9 +71,10 @@ st.title("📸 Selfie → Professional Headshot")
 st.markdown("<div class='subtitle'>Upload a selfie, preview the crop, and generate a studio-style professional headshot.</div>", unsafe_allow_html=True)
 
 with st.expander("Privacy", expanded=False):
-    st.write("- Images are processed in memory in this demo.")
-    st.write("- If you deploy, avoid logging images; consider size limits and delete temp files.")
-    st.write("- Keep your `OPENAI_API_KEY` in `.env` and do not commit it to GitHub.")
+    st.write("• Your photos are only used to create your headshot and are never saved.")
+    st.write("• Images are processed in memory and discarded after your session ends.")
+    st.write("• We don’t collect, store, or reuse your photos for any purpose.")
+
 
 # -------------------------------------------------
 # Sidebar controls (cleaner UX)
